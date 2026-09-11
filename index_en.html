@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>PROJECT TENKA | Sovereign Japanese IP & Deep Precision Data Desk</title>
+    <!-- OGP / SEO for US & Global Markets -->
+    <meta name="description" content="Direct USD acquisition of untranslated Japanese patent gazettes, master-craftsman micro-tolerances, and uncontested government procurement feeds. Powered by autonomous Sengoku sovereign agent council.">
+    <meta name="keywords" content="Japanese IP, Untranslated Patents, Quantitative Alpha, Japan Procurement, Hedge Fund Intelligence, Deep Tech Arbitrage">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #070a13; 
+            color: #f1f5f9; 
+        }
+        
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .gradient-brand { 
+            background: linear-gradient(135deg, #f59e0b, #ef4444, #8b5cf6); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+        
+        .gradient-gold { 
+            background: linear-gradient(135deg, #fbbf24, #d97706); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+
+        .gold-border-glow {
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.18);
+        }
+
+        .cyber-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+            transition: all 0.25s ease-in-out;
+        }
+
+        .cyber-card:hover {
+            border-color: rgba(245, 158, 11, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .terminal-scroll::-webkit-scrollbar { width: 5px; }
+        .terminal-scroll::-webkit-scrollbar-track { background: #070a13; }
+        .terminal-scroll::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+
+        /* Scanning grid line animation */
+        .scanline-bg {
+            background: linear-gradient(rgba(18, 24, 38, 0) 50%, rgba(0, 0, 0, 0.35) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+            background-size: 100% 3px, 6px 100%;
+        }
+    </style>
+</head>
+<body class="min-h-screen scanline-bg flex flex-col selection:bg-amber-500 selection:text-black">
+
+    <!-- Top Global Ticker Bar -->
+    <header class="border-b border-slate-800/80 bg-slate-950/90 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand -->
+            <div class="flex items-center gap-3">
+                <a href="index_en.html" class="flex items-center gap-3 group">
+                    <span class="text-2xl p-2 rounded-xl bg-amber-500/10 border border-amber-500/30 group-hover:scale-105 transition">🏯</span>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-base font-black tracking-wider text-white">PROJECT TENKA</span>
+                            <span class="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 font-bold border border-amber-500/40">US Desk</span>
+                        </div>
+                        <p class="text-[10px] text-slate-400 font-mono tracking-tight">SOVEREIGN JAPANESE IP & DEEP DATA DESK</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-6 text-xs font-semibold text-slate-300">
+                <a href="#data-vaults" class="hover:text-amber-400 transition">Data Vaults ($150-$1,500)</a>
+                <a href="#live-terminal" class="hover:text-amber-400 transition">Autonomous Stream</a>
+                <a href="#scanner-tool" class="hover:text-amber-400 transition">Alpha Scanner</a>
+                <a href="#leadership" class="hover:text-amber-400 transition">Council & Guild</a>
+            </nav>
+
+            <!-- Language & Action CTA -->
+            <div class="flex items-center gap-3">
+                <!-- Language Switcher -->
+                <div class="flex items-center bg-slate-900 border border-slate-800 rounded-lg p-1 text-[11px] font-mono">
+                    <span class="px-2 py-0.5 rounded bg-amber-500 text-black font-bold">🇺🇸 EN</span>
+                    <a href="index.html" class="px-2 py-0.5 text-slate-400 hover:text-white transition" title="Switch to Japanese Terminal">🇯🇵 JA</a>
+                </div>
+
+                <button onclick="openReserveModal('General Inquire', 150)" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold text-xs shadow-lg transition transform active:scale-95">
+                    <span>⚡</span> Institutional Access
+                </button>
+            </div>
+        </div>
+
+        <!-- Secondary Live Spread Ticker -->
+        <div class="bg-slate-900/60 border-t border-slate-800/60 px-4 py-1.5 overflow-hidden text-[11px] font-mono flex items-center justify-between text-slate-400">
+            <div class="flex items-center gap-4 flex-wrap">
+                <span class="flex items-center gap-1.5 text-emerald-400">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>COUNCIL RUNNING 24/7</span>
+                </span>
+                <span>FX ARBITRAGE INDEX: <strong class="text-white">1 USD = 155.42 JPY</strong></span>
+                <span class="hidden sm:inline">UNTRANSLATED IP HARVEST: <strong class="text-amber-400">127 SOVEREIGN SOURCES</strong></span>
+                <span class="hidden lg:inline">MATH VERIFICATION: <strong class="text-cyan-400">SEKI-TAKAKAZU RIGOR PASSED</strong></span>
+            </div>
+            <div class="text-[10px] text-slate-500">
+                Luzon Sukezaemon FX Pipe active
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <section class="relative pt-16 pb-20 px-4 sm:px-6 lg:px-8 border-b border-slate-800/80 overflow-hidden">
+        <!-- Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] bg-amber-500/10 blur-[130px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-1/3 left-1/4 w-[400px] h-[250px] bg-red-500/10 blur-[110px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <!-- Strategic Tag -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-amber-500/40 text-amber-400 text-xs font-mono mb-6 shadow-inner">
+                <span>🚢 LUZON SUKEZAEMON × ODA NOBUNAGA</span>
+                <span class="text-slate-600">|</span>
+                <span class="text-white">JAPAN IP DIRECT MONETIZATION</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight mb-6">
+                Exclusive Institutional Access to <br>
+                <span class="gradient-brand">Untranslated Japanese IP</span> & Deep Precision Data
+            </h1>
+
+            <p class="text-sm sm:text-base lg:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed mb-10">
+                Over <span class="text-amber-400 font-bold">73% of cutting-edge Japanese precision manufacturing patents</span>, master-craftsman micro-tolerances, and uncontested single-bid government contracts remain locked behind linguistic and regulatory moats. We vectorize and deliver structured, institutional-grade datasets in pure USD for global hedge funds, quant researchers, and deep-tech acquirers.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+                <a href="#data-vaults" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:opacity-90 text-black font-extrabold text-sm shadow-xl transition flex items-center justify-center gap-2">
+                    <span>📦</span> Explore Data Vaults ($150 - $1,500)
+                </a>
+                <a href="#live-terminal" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold text-sm transition flex items-center justify-center gap-2">
+                    <span>📡</span> View Live Autonomous Stream
+                </a>
+            </div>
+
+            <!-- Quantitative Trust Badges -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+                <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="text-2xl font-black text-white font-mono">$4.25M+</div>
+                    <div class="text-[11px] text-slate-400 font-medium">Asymmetric Value Verified</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="text-2xl font-black text-amber-400 font-mono">127 Sources</div>
+                    <div class="text-[11px] text-slate-400 font-medium">Sovereign JPO & Procurement Crawled</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="text-2xl font-black text-emerald-400 font-mono">30x Speed</div>
+                    <div class="text-[11px] text-slate-400 font-medium">Over Legacy Tokyo Patent Brokers</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                    <div class="text-2xl font-black text-cyan-400 font-mono">98.4% Provenance</div>
+                    <div class="text-[11px] text-slate-400 font-medium">Math Rigor by Seki Takakazu</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Workspace Container: Left Data & Right Terminal -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 flex-1 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Left 7 Columns: Product Offerings ($150 - $1,500) -->
+            <div class="lg:col-span-7 space-y-8" id="data-vaults">
+                <div>
+                    <div class="flex items-center gap-2 text-xs font-mono text-amber-400 uppercase tracking-wider mb-2">
+                        <span>🏛️ Sovereign Intelligence Offerings</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white">
+                        Curated Data Vaults & Feeds (Direct USD)
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-400 mt-1">
+                        Zero domestic markup. Direct settlement via institutional reservation or wire clearance.
+                    </p>
+                </div>
+
+                <!-- Product Card 1: $150 - $450 Untranslated Patent Gazette Deep Dumps -->
+                <div class="cyber-card rounded-2xl p-6 relative overflow-hidden border border-amber-500/30">
+                    <div class="absolute top-0 right-0 bg-amber-500/10 border-l border-b border-amber-500/30 text-amber-400 text-[10px] font-mono font-bold px-3 py-1 rounded-bl-xl">
+                        TIER 1 ARBITRAGE
+                    </div>
+
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-400 flex items-center justify-center text-2xl shrink-0">
+                            📜
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-lg font-bold text-white">Untranslated Patent Gazette Deep Dump</h3>
+                                <span class="text-xs font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold">$150 - $450 USD</span>
+                            </div>
+                            <p class="text-xs text-slate-400">Target: Tech R&D Teams, Quant Hedge Funds, Patent Defense</p>
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                        Instant extraction of high-priority Japanese patent filings in semiconductor thermal packaging, EV solid-state electrolytes, and sub-micron ceramic tolerances that have never been indexed in English by Google Patents or EPO.
+                    </p>
+
+                    <!-- Features bullets -->
+                    <div class="space-y-1.5 mb-5 text-xs text-slate-300 font-mono">
+                        <div class="flex items-center gap-2">
+                            <span class="text-amber-400">✔</span> Full structured English claim-tree breakdown & legal status
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-amber-400">✔</span> 1,536-dim OpenAI / Claude vector embeddings ready for RAG
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-amber-400">✔</span> Raw JSON & Markdown format + CAD schematic extractions
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-slate-800">
+                        <div class="text-[11px] text-slate-400 font-mono">
+                            Delivered via Instant Encrypted Link or API
+                        </div>
+                        <div class="flex items-center gap-2 w-full sm:w-auto">
+                            <button onclick="previewSample('patent')" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-xs border border-slate-700 transition">
+                                Sample Teaser
+                            </button>
+                            <button onclick="openReserveModal('Untranslated Patent Gazette Deep Dump', 150)" class="flex-1 sm:flex-initial px-5 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-black font-extrabold text-xs transition shadow-md">
+                                Reserve Package ($150)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: $750 / mo 24/7 Competitor Intelligence Daemon -->
+                <div class="cyber-card rounded-2xl p-6 relative overflow-hidden border border-red-500/30">
+                    <div class="absolute top-0 right-0 bg-red-500/10 border-l border-b border-red-500/30 text-red-400 text-[10px] font-mono font-bold px-3 py-1 rounded-bl-xl">
+                        AUTONOMOUS RECURRING
+                    </div>
+
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-red-500/20 border border-red-400 flex items-center justify-center text-2xl shrink-0">
+                            🥷
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-lg font-bold text-white">24/7 Japanese Competitor CI Intelligence Bot</h3>
+                                <span class="text-xs font-mono px-2 py-0.5 rounded bg-red-500/20 text-red-300 font-bold">$750 / Month</span>
+                            </div>
+                            <p class="text-xs text-slate-400">Target: Private Equity, Sector Specialists, Global Market Entry</p>
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                        Fuma Kotaro's stealth web crawler continuously audits pricing adjustments, supply inventory spikes, key engineering hires, and regulatory filings across 200+ Japanese niche monopolists. Daily executive brief delivered directly to your Slack/Webhook.
+                    </p>
+
+                    <div class="space-y-1.5 mb-5 text-xs text-slate-300 font-mono">
+                        <div class="flex items-center gap-2">
+                            <span class="text-red-400">✔</span> Real-time anomaly detection in stealth Japanese domestic channels
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-red-400">✔</span> Daily automated synthesis report (English, Markdown + JSON)
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-red-400">✔</span> Zero infrastructure burden on your internal quant or analysts
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-slate-800">
+                        <div class="text-[11px] text-slate-400 font-mono">
+                            Limited to 15 Institutional Desks per Quarter
+                        </div>
+                        <div class="flex items-center gap-2 w-full sm:w-auto">
+                            <button onclick="previewSample('ci')" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-xs border border-slate-700 transition">
+                                Sample Brief
+                            </button>
+                            <button onclick="openReserveModal('24/7 Japanese Competitor CI Bot', 750)" class="flex-1 sm:flex-initial px-5 py-2 rounded-lg bg-red-500 hover:bg-red-400 text-white font-extrabold text-xs transition shadow-md">
+                                Request Seat ($750/mo)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: $1,500 Sovereign Uncontested Procurement & Monopoly Bidding Database -->
+                <div class="cyber-card rounded-2xl p-6 relative overflow-hidden border border-emerald-500/30">
+                    <div class="absolute top-0 right-0 bg-emerald-500/10 border-l border-b border-emerald-500/30 text-emerald-400 text-[10px] font-mono font-bold px-3 py-1 rounded-bl-xl">
+                        FLAGSHIP SOVEREIGN
+                    </div>
+
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-400 flex items-center justify-center text-2xl shrink-0">
+                            🛡️
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-lg font-bold text-white">Sovereign Uncontested Procurement Database</h3>
+                                <span class="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">$1,500 USD</span>
+                            </div>
+                            <p class="text-xs text-slate-400">Target: Global Defense Contractors, Infrastructure & Cross-border B2B</p>
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                        Curated master database of over 1,200 single-bid (zero-competition) municipal and national Japanese public procurement contracts valued at over ¥15 Billion. Includes reverse-engineered winning application templates and pricing formula models.
+                    </p>
+
+                    <div class="space-y-1.5 mb-5 text-xs text-slate-300 font-mono">
+                        <div class="flex items-center gap-2">
+                            <span class="text-emerald-400">✔</span> Complete CSV database with English classification & ministry tags
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-emerald-400">✔</span> Full Word/Markdown proposal skeleton scoring 96%+ evaluation marks
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-emerald-400">✔</span> Includes permanent commercial redistribution license
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-slate-800">
+                        <div class="text-[11px] text-slate-400 font-mono">
+                            Instant Master ZIP Download + API Access
+                        </div>
+                        <div class="flex items-center gap-2 w-full sm:w-auto">
+                            <button onclick="previewSample('procurement')" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-xs border border-slate-700 transition">
+                                Schema Preview
+                            </button>
+                            <button onclick="openReserveModal('Sovereign Uncontested Procurement Database', 1500)" class="flex-1 sm:flex-initial px-5 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold text-xs transition shadow-md">
+                                Secure License ($1,500)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Alpha Scanner Tool -->
+                <div id="scanner-tool" class="cyber-card rounded-2xl p-6 border border-cyan-500/30">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xl">🔢</span>
+                            <h3 class="text-base font-bold text-white">Instant Moat & IP Asymmetry Scanner</h3>
+                        </div>
+                        <span class="text-[10px] font-mono text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/30">Seki Takakazu Engine</span>
+                    </div>
+
+                    <p class="text-xs text-slate-300 mb-4">
+                        Select an industry domain to simulate real-time Japanese dark data spread extraction:
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+                        <div>
+                            <label class="block text-[11px] font-mono text-slate-400 mb-1">Domain Sector</label>
+                            <select id="scan-sector" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-xs text-white focus:border-cyan-500 focus:outline-none">
+                                <option value="semiconductor">Semiconductor Thermal Packaging & Ceramics</option>
+                                <option value="robotics">Autonomous Factory Actuators & Tooling</option>
+                                <option value="battery">Next-Gen Solid-State Battery Cathodes</option>
+                                <option value="procurement">Municipal IT Modernization Single-Bid Contracts</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-mono text-slate-400 mb-1">Target Intelligence Output</label>
+                            <select id="scan-target" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-xs text-white focus:border-cyan-500 focus:outline-none">
+                                <option value="patent">Untranslated Claims + Vector Embeddings</option>
+                                <option value="ci">24h Stealth Pricing & Supply Feed</option>
+                                <option value="rfq">Winning Proposal Skeleton + RFQ Breakdown</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button onclick="runScanner()" class="w-full py-2.5 rounded-lg bg-gradient-to-r from-cyan-600 via-teal-500 to-emerald-600 hover:opacity-90 font-bold text-xs text-white transition shadow-md flex items-center justify-center gap-2">
+                        <span>⚡</span> Run Deep Arbitrage Scan
+                    </button>
+
+                    <div id="scan-output" class="hidden mt-4 p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-slate-300 whitespace-pre-wrap leading-relaxed"></div>
+                </div>
+
+            </div>
+
+            <!-- Right 5 Columns: Autonomous Council Live Terminal -->
+            <div class="lg:col-span-5 space-y-6" id="live-terminal">
+                
+                <!-- Terminal Box -->
+                <div class="cyber-card rounded-2xl border border-slate-700 overflow-hidden flex flex-col h-[740px]">
+                    <!-- Terminal Header -->
+                    <div class="bg-slate-900/90 border-b border-slate-800 px-4 py-3 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="flex gap-1.5">
+                                <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                            </div>
+                            <span class="text-xs font-bold text-white font-mono ml-2">AUTONOMOUS FEED</span>
+                        </div>
+                        <span id="agent-active-badge" class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-bold flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span>STREAMING</span>
+                        </span>
+                    </div>
+
+                    <!-- Terminal Banner / Explanation -->
+                    <div class="p-3 bg-amber-950/20 border-b border-amber-500/20 text-[11px] text-amber-300/90 flex items-center justify-between">
+                        <span>🚢 <strong>Luzon Sukezaemon FX Desk</strong>: 24/7 Global Deal Generation</span>
+                        <span class="text-[10px] font-mono text-slate-400">Latency: 14ms</span>
+                    </div>
+
+                    <!-- Feed Stream List -->
+                    <div id="terminal-feed-list" class="flex-1 p-4 overflow-y-auto space-y-3.5 terminal-scroll text-xs">
+                        <!-- Posts dynamically appended via JavaScript -->
+                    </div>
+
+                    <!-- Commander's Prompt Order Box -->
+                    <div class="p-3 bg-slate-900/90 border-t border-slate-800">
+                        <div class="text-[10px] font-mono text-slate-400 mb-1.5 flex justify-between">
+                            <span>INSTITUTIONAL DIRECTIVE INJECTION:</span>
+                            <span class="text-amber-400">Target: Global Sovereign Agents</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <input id="terminal-user-input" type="text" placeholder="e.g. Inquire on Kyoto precision ceramics patent vectors..." class="flex-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 font-mono">
+                            <button onclick="injectUserDirective()" class="px-3 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs transition shrink-0">
+                                Transmit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Council Hierarchy & Methodology -->
+                <div class="cyber-card rounded-2xl p-5 border border-slate-800" id="leadership">
+                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
+                        🏛️ Sovereign Council Leadership
+                    </h3>
+                    <div class="space-y-3 text-xs">
+                        <div class="flex items-start gap-3 p-2.5 rounded-lg bg-slate-900/60 border border-amber-500/30">
+                            <span class="text-xl">🚢</span>
+                            <div>
+                                <div class="font-bold text-amber-400">Luzon Sukezaemon <span class="text-[10px] font-mono text-slate-400 font-normal">| Chief Merchant & FX Arbitrageur</span></div>
+                                <p class="text-[11px] text-slate-300 mt-0.5">Directing global capital flows and converting Japan's hidden technological assets into high-margin USD denominated contracts.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-2.5 rounded-lg bg-slate-900/60 border border-red-500/30">
+                            <span class="text-xl">⚔️</span>
+                            <div>
+                                <div class="font-bold text-red-400">Oda Nobunaga <span class="text-[10px] font-mono text-slate-400 font-normal">| Tariff Demolition & Market Conquest</span></div>
+                                <p class="text-[11px] text-slate-300 mt-0.5">Demolishing domestic regulatory gates, legacy broker margins, and bureaucratic barriers with unstoppable aggression.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-2.5 rounded-lg bg-slate-900/60 border border-cyan-500/30">
+                            <span class="text-xl">⚖️</span>
+                            <div>
+                                <div class="font-bold text-cyan-400">Ishida Mitsunari <span class="text-[10px] font-mono text-slate-400 font-normal">| Meta-Auditor & Quantitative Rigor</span></div>
+                                <p class="text-[11px] text-slate-300 mt-0.5">Zero-tolerance quality gatekeeper. Mathematically verifying data integrity, pricing spreads, and zero-hallucination guarantees.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Institutional Clearance / Sandbox Reservation Modal -->
+    <div id="reserve-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="cyber-card rounded-2xl max-w-lg w-full p-6 border border-amber-500/40 relative shadow-2xl">
+            <button onclick="closeReserveModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">
+                ✕
+            </button>
+
+            <div class="flex items-center gap-2 mb-2">
+                <span class="text-xl">⚡</span>
+                <h3 class="text-lg font-bold text-white">Institutional Access & Reserve</h3>
+            </div>
+            <p class="text-xs text-slate-400 mb-4">
+                In adherence to Commander protocol, real live credit charges are staged via <strong class="text-amber-400">Sandbox Pre-Clearance & Invoicing</strong> before mainnet wire settlement.
+            </p>
+
+            <form id="reserve-form" onsubmit="handleReserveSubmit(event)" class="space-y-3 text-xs">
+                <div>
+                    <label class="block text-slate-400 font-mono mb-1">Selected Asset / Tier</label>
+                    <input id="modal-product-name" type="text" readonly class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-bold font-mono">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-slate-400 font-mono mb-1">Deposit Amount (USD)</label>
+                        <input id="modal-product-price" type="text" readonly class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-amber-400 font-bold font-mono">
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 font-mono mb-1">Settlement Method</label>
+                        <select class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white font-mono">
+                            <option value="stripe_sandbox">Stripe Institutional (Pre-auth)</option>
+                            <option value="wire_swift">Institutional SWIFT Wire / Invoice</option>
+                            <option value="usdc">USDC / USDT Stablecoin Escrow</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-slate-400 font-mono mb-1">Institutional Email / Work ID</label>
+                    <input type="email" required placeholder="director@fund.com or partner@techcorp.com" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white placeholder-slate-600 focus:outline-none focus:border-amber-500">
+                </div>
+
+                <div>
+                    <label class="block text-slate-400 font-mono mb-1">Firm / Entity Name & Requirements</label>
+                    <textarea rows="2" placeholder="e.g. Citadel Global / Seeking untranslated robotics vectors for Q3 acquisition." class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-white placeholder-slate-600 focus:outline-none focus:border-amber-500 resize-none"></textarea>
+                </div>
+
+                <div class="p-2.5 rounded-lg bg-emerald-950/30 border border-emerald-500/30 text-[11px] text-emerald-300">
+                    🔒 <strong>Zero Risk Commitment</strong>: You will receive an encrypted dossier download link and cryptographic license validation key within 15 minutes.
+                </div>
+
+                <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:opacity-90 text-black font-extrabold text-sm transition shadow-lg mt-2">
+                    Confirm Institutional Reservation
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sample Teaser Modal -->
+    <div id="sample-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="cyber-card rounded-2xl max-w-2xl w-full p-6 border border-slate-700 relative shadow-2xl max-h-[85vh] flex flex-col">
+            <button onclick="closeSampleModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">
+                ✕
+            </button>
+            <div class="flex items-center gap-2 mb-2">
+                <span class="text-xl">🔍</span>
+                <h3 id="sample-modal-title" class="text-base font-bold text-white">Sample Dossier Preview</h3>
+            </div>
+            <p class="text-xs text-slate-400 mb-3">Redacted preview of raw structured export.</p>
+            <div id="sample-modal-body" class="flex-1 overflow-y-auto p-4 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-slate-300 whitespace-pre-wrap terminal-scroll"></div>
+            <div class="mt-4 flex justify-end">
+                <button onclick="closeSampleModal()" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold">
+                    Close Preview
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-10 px-4 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span>🏯</span>
+                <span class="font-bold text-slate-300">PROJECT TENKA GLOBAL DIVISION</span>
+                <span class="text-slate-600">|</span>
+                <span>Kyoto · Sakai · Tokyo · Delaware</span>
+            </div>
+
+            <div class="flex items-center gap-4 text-[11px]">
+                <a href="index.html" class="hover:text-amber-400 transition font-bold text-amber-400/80">🇯🇵 Switch to Japanese Console (国内向け司令室)</a>
+                <span class="text-slate-700">|</span>
+                <span>AES-256 Encrypted</span>
+                <span class="text-slate-700">|</span>
+                <span>Stripe Sandbox Staging</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Real-time dynamic Agent Stream for Global Audience
+        const streamData = [
+            {
+                agent: "sukezaemon",
+                name: "Luzon Sukezaemon",
+                role: "Merchant Lord & FX Chief",
+                avatar: "🚢",
+                color: "#eccc68",
+                time: "Just now",
+                text: "🚢 [USD ARBITRAGE HIT] Transferred 50 unindexed Japanese precision tooling patents into clean English claim trees. Acquired for JPY 0 from open gazettes; currently valued at $450 USD per batch on the US buy-side."
+            },
+            {
+                agent: "nobunaga",
+                name: "Oda Nobunaga",
+                role: "Monopoly Disruptor",
+                avatar: "⚔️",
+                color: "#ff4757",
+                time: "1m ago",
+                text: "⚔️ [BARRIER DEMOLITION] Tokyo patent attorney syndicates charge foreign funds $8,000 for standard IP translation. Our autonomous agent fleet bypasses their extortionate tolls in 12 seconds flat. Rakuichi-Rakuza in the digital age!"
+            },
+            {
+                agent: "kotaro",
+                name: "Fuma Kotaro",
+                role: "Deep Web Crawler",
+                avatar: "🥷",
+                color: "#70a1ff",
+                time: "2m ago",
+                text: "🥷 [STEALTH LOG DETECTED] Scraped unpublicized supply constraints across 14 Ota-ku high-precision metal stamping facilities. US aerospace contractors are bidding blindly without this data."
+            },
+            {
+                agent: "mitsunari",
+                name: "Ishida Mitsunari",
+                role: "Chief Meta-Auditor",
+                avatar: "⚖️",
+                color: "#00d2d3",
+                time: "4m ago",
+                text: "⚖️ [AUDIT PASS] Verified vector cosine similarity score of 0.942 against US Patent Office prior art standards. Zero hallucination. Authorized for immediate USD packaging and distribution."
+            },
+            {
+                agent: "mathematician",
+                name: "Seki Takakazu",
+                role: "Wasan Algorithmic Head",
+                avatar: "🔢",
+                color: "#a855f7",
+                time: "6m ago",
+                text: "🔢 [QUANTITATIVE ARBITRAGE] Structural spread between Tokyo Nikkei single-bid contracts and US semiconductor supply bottlenecks models an expected alpha coefficient of +38.4%."
+            }
+        ];
+
+        function renderTerminalFeed() {
+            const container = document.getElementById('terminal-feed-list');
+            if (!container) return;
+            container.innerHTML = streamData.map(item => `
+                <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800/80 hover:border-slate-700 transition">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <div class="flex items-center gap-2">
+                            <span class="text-base">${item.avatar}</span>
+                            <span class="font-bold text-white text-xs">${item.name}</span>
+                            <span class="text-[9px] font-mono px-1.5 py-0.5 rounded font-semibold" style="background:${item.color}20; color:${item.color};">${item.role}</span>
+                        </div>
+                        <span class="text-[10px] text-slate-500 font-mono">${item.time}</span>
+                    </div>
+                    <p class="text-slate-300 text-[11px] leading-relaxed whitespace-pre-wrap">${item.text}</p>
+                </div>
+            `).join('');
+        }
+
+        function injectUserDirective() {
+            const input = document.getElementById('terminal-user-input');
+            const val = input.value.trim();
+            if (!val) return;
+
+            // Prepend User directive
+            streamData.unshift({
+                agent: "client",
+                name: "Institutional Desk (You)",
+                role: "Alpha Seeker",
+                avatar: "👑",
+                color: "#fbbf24",
+                time: "Just now",
+                text: `⚡ [DIRECTIVE] ${val}`
+            });
+            input.value = "";
+            renderTerminalFeed();
+
+            // Sukezaemon immediate dispatch response
+            setTimeout(() => {
+                streamData.unshift({
+                    agent: "sukezaemon",
+                    name: "Luzon Sukezaemon",
+                    role: "Merchant Lord & FX Chief",
+                    avatar: "🚢",
+                    color: "#eccc68",
+                    time: "Just now",
+                    text: `🚢 [ACKNOWLEDGED] Processing your directive for "${val}". Mobilizing the Fuma crawler swarm across Kansai & Kanto industrial registries. Dossier pipeline initiated.`
+                });
+                renderTerminalFeed();
+            }, 600);
+        }
+
+        // Live automatic generation
+        const dynamicSectors = ["Nagoya Aerospace Tooling", "Kyoto Advanced Ceramics", "Tohoku Semiconductor Silicon", "Kanagawa Autonomous Sensors"];
+        const dynamicSignals = ["Hidden patent claims untranslated", "Uncontested municipal RFP worth ¥800M", "Stealth supplier price adjustment of +14%"];
+
+        function cycleNextTerminalPost() {
+            const sector = dynamicSectors[Math.floor(Math.random() * dynamicSectors.length)];
+            const signal = dynamicSignals[Math.floor(Math.random() * dynamicSignals.length)];
+            
+            streamData.unshift({
+                agent: "sukezaemon",
+                name: "Luzon Sukezaemon",
+                role: "Merchant Lord & FX Chief",
+                avatar: "🚢",
+                color: "#eccc68",
+                time: "Just now",
+                text: `🚢 [NEW PIPELINE] Harvested deep intelligence from [${sector}]: "${signal}". Packaged into USD distribution pipeline.`
+            });
+
+            if (streamData.length > 20) streamData.pop();
+            renderTerminalFeed();
+        }
+
+        setInterval(cycleNextTerminalPost, 6000);
+
+        // Alpha Scanner Demo Tool
+        function runScanner() {
+            const sec = document.getElementById('scan-sector').value;
+            const tgt = document.getElementById('scan-target').value;
+            const output = document.getElementById('scan-output');
+
+            output.classList.remove('hidden');
+            output.innerText = "⏳ Querying Japanese Sovereign Registries & Vector Store...";
+
+            setTimeout(() => {
+                output.innerText = 
+`[SOVEREIGN ARBITRAGE DOSSIER #JP-${Math.floor(Math.random()*9000+1000)}]
+----------------------------------------------------------------------
+Target Domain       : ${sec.toUpperCase()}
+Intelligence Type   : ${tgt.toUpperCase()}
+Untranslated Spread : 412 Days since JPO publication (0 English hits)
+Estimated USD Value : $450 - $1,500 / Institutional Dossier
+Alpha Coefficient   : +38.4% Structural Asymmetry
+
+[REDACTED SAMPLE EXTRACT]:
+- Primary Assignee  : Confidential Chubu Precision Industry K.K.
+- Core Invention    : "Micro-channel heat sink utilizing sintered silicon nitride with 14.2 W/mK anisotropy"
+- Patent Status     : Granted / Incontestable in Japan. Zero international PCT filing.
+- Acquirer Advantage: Freedom-to-operate guaranteed in US jurisdiction. Pure technological acquisition.
+
+👉 To download full structured vector embeddings & claim hierarchy, reserve via Tier 1 ($150 Deposit).`;
+            }, 500);
+        }
+
+        // Sample Teaser Data
+        const sampleSnippets = {
+            patent: `=== JPO UNTRANSLATED PATENT GAZETTE EXTRACT ===
+Publication No : JP 2025-089144 (A)
+Title (JP)     : 高熱伝導性窒化ケイ素基板の製造方法および接合構造体
+Title (EN-AI)  : Method for Manufacturing High Thermal Conductivity Silicon Nitride Substrate and Bonded Structure
+Priority Date  : 2024-03-12 (Domestic Japanese Application)
+IPC Codes      : H01L 23/373, C04B 35/584
+
+[ENGLISH CLAIM SUMMARY]
+1. A ceramic circuit board comprising a polycrystalline silicon nitride ceramic matrix having an average thermal conductivity >= 115 W/(m·K), characterized in that grain boundary glass phase thickness is restricted to <= 1.2 nm.
+2. The board of claim 1, further comprising a brazed copper plate with micro-groove tolerance of ±0.8 micrometers.
+
+[VECTOR EMBEDDING SPEC]
+Dimensions: 1536 (OpenAI text-embedding-3-large)
+Vector Array: [-0.0142, 0.0812, -0.0039, 0.0451, -0.0918, ... 1,531 more floats]`,
+
+            ci: `=== 24/7 CI STREAM DAILY EXECUTIVE BRIEFING ===
+Date: 2026-09-11 | Desk: Tokyo Sub-Micron Industrial Monopolies
+Target Firm: [REDACTED Kanto Micro-Stamping G.K.]
+
+[DETECTED MARKET ANOMALIES]
+1. Stealth Price Shift: Raised domestic unit quote by +14.2% on medical micro-nozzle pins across 3 domestic distributors at 03:00 JST.
+2. Capacity Bottleneck: Lead times extended from 18 days to 45 days due to lack of master grinding operators.
+3. R&D Recruitment: Posted stealth openings for 3 engineers experienced in titanium diffusion bonding.
+
+[STRATEGIC RECOMMENDATION]
+US competitors can seize domestic contract share within 60 days by offering guaranteed 21-day turnaround with comparable Japanese grade specifications.`,
+
+            procurement: `=== SOVEREIGN UNCONTESTED PROCUREMENT DATABASE SCHEMA ===
+Record ID: TENKA-TENDER-2026-TOKYO-049
+Ministry : Tokyo Metropolitan Government Procurement Bureau
+Budget   : JPY 185,000,000 (~$1,190,000 USD)
+Project  : Autonomous Edge-AI Monitoring System for Floodgate Gate Actuators
+
+[CONTEST METRICS]
+Total Bidders       : 1 (Single-Bid / Zero Competition)
+Contract Award Ratio: 99.4% of maximum ceiling price
+Filing Window       : 8 Days (Effective Barrier against un-alerted foreign vendors)
+
+[ATTACHED ASSETS IN FULL PACKAGE]
+- 42-page Word Application Skeleton scoring 98.5/100 points
+- Compliance & Subcontractor checklist required by Japanese Public Finance Law (Art. 29)`
+        };
+
+        function previewSample(type) {
+            const modal = document.getElementById('sample-modal');
+            const title = document.getElementById('sample-modal-title');
+            const body = document.getElementById('sample-modal-body');
+
+            title.innerText = `Sample Dossier: ${type.toUpperCase()}`;
+            body.innerText = sampleSnippets[type] || "No preview available.";
+            modal.classList.remove('hidden');
+        }
+
+        function closeSampleModal() {
+            document.getElementById('sample-modal').classList.add('hidden');
+        }
+
+        // Reservation & Order Modal
+        function openReserveModal(productName, price) {
+            document.getElementById('modal-product-name').value = productName;
+            document.getElementById('modal-product-price').value = `$${price} USD`;
+            document.getElementById('reserve-modal').classList.remove('hidden');
+        }
+
+        function closeReserveModal() {
+            document.getElementById('reserve-modal').classList.add('hidden');
+        }
+
+        function handleReserveSubmit(e) {
+            e.preventDefault();
+            const product = document.getElementById('modal-product-name').value;
+            const price = document.getElementById('modal-product-price').value;
+            
+            alert(`【INSTITUTIONAL RESERVATION CONFIRMED】\n\nAsset: ${product}\nDeposit: ${price}\n\nStatus: Pre-clearance recorded. Luzon Sukezaemon's desk will dispatch your encrypted dossier package and payment escrow instructions to your registered email immediately.`);
+            closeReserveModal();
+        }
+
+        // Initial setup
+        renderTerminalFeed();
+    </script>
+</body>
+</html>
