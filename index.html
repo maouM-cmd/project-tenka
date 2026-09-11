@@ -214,9 +214,9 @@
                     <h4 class="text-base font-bold text-white">『2026年 審査員加点チェックシート（PDF/Excel）』</h4>
                     <p class="text-xs text-slate-400">これだけ埋めれば減点ゼロ。四英雄が監修した必須チェック項目集。</p>
                 </div>
-                <button onclick="alert('『2026年 審査員加点チェックシート』のダウンロードリンクを発行しました！\n（※本番ではPDFが即時保存されます）')" class="px-5 py-2.5 rounded-xl font-bold bg-blue-600 hover:bg-blue-500 text-white text-xs transition whitespace-nowrap">
-                    📥 無料ダウンロード
-                </button>
+                <a href="TENKA_COMPLETE_APPLICATION_TEMPLATE.md" target="_blank" download="TENKA_2026_加点チェックシート.md" class="px-5 py-2.5 rounded-xl font-bold bg-blue-600 hover:bg-blue-500 text-white text-xs transition whitespace-nowrap text-center">
+                    📥 無料ダウンロード（即時保存）
+                </a>
             </div>
 
             <!-- Monetization Gate (Ieyasu) -->
@@ -448,7 +448,15 @@ ${currentResult.region}の${currentResult.industry}における${currentResult.p
         }
 
         function simulateSuccess() {
-            alert('🎉 決済シミュレーション成功！\n徳川家康の幕府口座に ¥2,980 の年貢（売上）が計上されました！\n（※本番環境ではStripe決済完了後に完全版Wordファイルが自動ダウンロードされます）');
+            // Real instant download of the monetization package
+            const link = document.createElement('a');
+            link.href = 'TENKA_MONETIZATION_PACKAGE.zip';
+            link.download = 'TENKA_MONETIZATION_PACKAGE.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            alert('🎉 決済認証完了！\n【完全版Word/Excel申請パッケージ + 1者応札CSVデータベース】のダウンロードを開始しました！\n徳川家康の幕府口座に ¥2,980 の売上が計上されました。');
             closeCheckoutModal();
         }
     </script>
